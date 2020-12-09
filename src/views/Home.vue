@@ -1,12 +1,17 @@
 <template>
   <div class="home">
-    <p>Home Page</p>
+    <ImageComponent></ImageComponent>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import ImageComponent from '@/components/Image.vue'
 
-@Component
+@Component({
+  components: {
+    ImageComponent
+  }
+})
 export default class Home extends Vue {}
 </script>
