@@ -1,12 +1,17 @@
 <template>
   <div class="home">
-    <ImageComponent></ImageComponent>
+    <div class="mb-4">
+      <h2>Home</h2>
+    </div>
+    <div>
+      <ImageComponent></ImageComponent>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import ImageComponent from '@/components/Image.vue'
+import { Component, Vue } from 'vue-property-decorator';
+import ImageComponent from '@/components/Image.vue';
 
 @Component({
   components: {
